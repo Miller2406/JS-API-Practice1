@@ -1,0 +1,115 @@
+/* style sheet here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+
+body {}
+
+/* CLASSES */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5%;
+    background-color: #000000;
+    color: #fff;
+}
+
+.left-bar {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 2.5rem;
+}
+
+.left-bar .brand-box {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.left-bar .brand-box .logo {
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+.left-bar .brand-box .brand-name {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    border-left: 1px solid black;
+    padding-left: 3px;
+}
+
+.mid-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.mid-bar .menu-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 2.5rem;
+}
+
+.mid-bar .menu-box .menu {
+    font-size: 1.2rem;
+    border: .5px solid rgba(211, 211, 211, 0.515);
+    padding: 2px 30px;
+    border-radius: 10px;
+}
+
+.mid-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.386);
+}
+
+
+
+.right-bar {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: flex-end;
+    height: 2.5rem;
+}
+
+.right-bar .sign-box {
+    padding: 3px 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: rgb(60, 60, 255);
+    border: 1px solid rgba(0, 0, 0, 0.408);
+
+}
+
+.right-bar a:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.right-bar .btn-help {
+    padding: 3px 10px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.408);
+}
+
+
+
+
+/* ELEMENTS */
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {}
