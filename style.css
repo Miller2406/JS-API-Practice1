@@ -1,115 +1,113 @@
-/* style sheet here */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    transition: all .6s ease;
 }
 
-body {}
+body {
+    margin: 30px 5%;
+    color: white;
+    background-color: black;
+}
+
+/* ID */
+#formGet input {
+    margin: 20px 0;
+}
 
 /* CLASSES */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 5%;
-    background-color: #000000;
-    color: #fff;
+.container {
+    margin: 30px 5%;
 }
 
-.left-bar {
-    display: flex;
-    align-items: center;
-    width: 20%;
-    height: 2.5rem;
-}
-
-.left-bar .brand-box {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-}
-
-.left-bar .brand-box .logo {
-    margin: 0 10px;
-    font-size: 2rem;
-}
-
-.left-bar .brand-box .brand-name {
-    margin-left: 5px;
-    font-size: 1.5rem;
-    border-left: 1px solid black;
-    padding-left: 3px;
-}
-
-.mid-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-}
-
-.mid-bar .menu-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-    height: 2.5rem;
-}
-
-.mid-bar .menu-box .menu {
-    font-size: 1.2rem;
-    border: .5px solid rgba(211, 211, 211, 0.515);
-    padding: 2px 30px;
-    border-radius: 10px;
-}
-
-.mid-bar a:hover {
-    background-color: rgba(255, 255, 255, 0.386);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
 }
 
 
-
-.right-bar {
-    display: flex;
-    align-items: center;
-    width: 20%;
-    justify-content: flex-end;
-    height: 2.5rem;
+.bglightblue {
+    background-color: rgb(0, 0, 0);
+    margin: 10px 5px;
+    padding: 10px 20px 5%;
+    height: 90%;
 }
 
-.right-bar .sign-box {
-    padding: 3px 10px;
-    margin-right: 20px;
-    border-radius: 15px;
-    background-color: rgb(60, 60, 255);
-    border: 1px solid rgba(0, 0, 0, 0.408);
+.bglightblue:hover {
+    background-color: rgb(34, 34, 34);
 
 }
 
-.right-bar a:hover {
-    background-color: #fff;
-    color: #000000;
+.bgbk {
+    background-color: rgb(72, 72, 72);
 }
-
-.right-bar .btn-help {
-    padding: 3px 10px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.408);
-}
-
-
-
 
 /* ELEMENTS */
+p {
+    margin: 2px 0px 7px;
+}
 
+ul {
+    padding-left: 10px;
+    list-style: none;
+}
+
+li {
+    overflow-wrap: break-word;
+}
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
 
-a:hover {}
+a:hover {
+    color: brown;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3vh 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+button {
+    width: 36px;
+    height: 26px;
+    border-radius: 20%;
+    padding: 1px;
+}
+
+button:hover {
+    scale: 1.5;
+    transition: all .2s ease;
+    font-weight: 600;
+    color: brown;
+    transform: translateX(5px);
+}
+
+/* RESPONSIVE */
+@media screen and (width <=1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
